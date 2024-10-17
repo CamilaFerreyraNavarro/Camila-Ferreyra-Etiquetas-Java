@@ -5,4 +5,12 @@ public class Main{
 	} else {
 		System.out.println("Hay " + args.length() + " argumentos");
 	}
+
+	try{
+		for(int i = 0; i < args.length(); i++){
+			System.out.println(args[i]);
+		}
+	} catch(IndexOutOfBoundsException e){
+			System.out.println("Error " + e);
+		}
 }
